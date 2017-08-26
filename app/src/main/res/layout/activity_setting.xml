@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="设置"
+        android:textSize="28sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="植物名称"
+        android:textSize="20sp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="72dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用预设"
+        android:textSize="20sp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="48dp"
+        android:text="适合湿度"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="适合光照"
+        android:textSize="20sp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editTextPlantName"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextSetMoisture1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toRightOf="@+id/textView4"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDefaultPlant1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="~"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@+id/editTextSetMoisture1"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDefaultPlant1" />
+
+    <EditText
+        android:id="@+id/editTextSetMoisture2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toRightOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDefaultPlant1" />
+
+    <EditText
+        android:id="@+id/editTextSetIllumination1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toRightOf="@+id/textView5"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSetMoisture1" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="~"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@+id/editTextSetIllumination1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSetMoisture1" />
+
+    <EditText
+        android:id="@+id/editTextSetIllumination2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toRightOf="@+id/textView7"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSetMoisture1" />
+
+    <Button
+        android:id="@+id/buttonSaveSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSetIllumination2"
+        android:layout_marginRight="32dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonDefaultPlant1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/plant1"
+        app:layout_constraintLeft_toRightOf="@+id/textView3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPlantName" />
+
+    <ImageButton
+        android:id="@+id/buttonDefaultPlant2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/plant2"
+        app:layout_constraintLeft_toRightOf="@+id/buttonDefaultPlant1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPlantName" />
+
+    <ImageButton
+        android:id="@+id/buttonDefaultPlant3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/plant3"
+        app:layout_constraintLeft_toRightOf="@+id/buttonDefaultPlant2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPlantName" />
+
+    <ImageButton
+        android:id="@+id/buttonDefaultPlant4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toRightOf="@+id/buttonDefaultPlant3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPlantName"
+        app:srcCompat="@drawable/plant4" />
+
+</android.support.constraint.ConstraintLayout>
